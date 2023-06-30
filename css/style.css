@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+* { 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body { 
+    background-color: rgb(186, 73, 73)
+}
+
+#relogio { 
+    height: 100vh;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+.verde { 
+    background-color: green;
+    cursor: pointer;
+
+}
+
+.cinza { 
+    background-color: #808080;
+    cursor: pointer;
+
+}
+
+.vermelho { 
+    background-color: red;
+    cursor: pointer;
+}
+
+#relogio h1 { 
+    font-size: 12rem;
+}
+
+.btns{ 
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.btns button { 
+    width: 240px;
+    height: 80px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 2%;
+    color: white;
+}
+
+/* media query tablet/notebook menor */ 
+@media ( max-width:768px) { 
+    #relogio h1 { 
+        font-size: 8rem;
+    }
+    .btns button { 
+        width: 150px;
+        font-size: 2rem;
+    }
+}
+
+/* media query tablet */ 
+@media ( max-width:650px) { 
+    #relogio h1 { 
+        font-size: 6rem;
+    }
+    .btns button { 
+        width: 120px;
+        font-size: 1.5rem;
+    }
+
+
+}
+
+@media ( max-width: 426px ) {  
+    #relogio h1 { 
+        font-size: 4rem;
+    }
+    .btns button { 
+        width: 80px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}
+
+/* media query mobile large */
+@media ( max-width:375px) { 
+}
